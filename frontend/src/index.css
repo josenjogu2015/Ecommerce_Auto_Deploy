@@ -15,14 +15,72 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   line-height: 1.6;
 }
+}
 
 .hero-section {
-  background: linear-gradient(135deg, var(--primary-color) 0%, #ffffff 100%);
+  position: relative;
   min-height: 60vh;
   display: flex;
   align-items: center;
-  color: #4c84ff;
+  padding: 4rem 2rem;
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #f5f7fa 50%,
+    #eef1f5 100%
+  );
+  overflow: hidden;
 }
+
+/* Subtle depth so it doesn't look flat */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 15% 20%, rgba(13, 110, 253, 0.06), transparent 60%);
+  pointer-events: none;
+}
+
+.hero-section h1,
+.hero-section p,
+.hero-section .hero-content {
+  position: relative;
+  z-index: 1;
+  color: #1a1a1a;
+}
+
+.hero-section h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  color: #111111;
+}
+
+.hero-section p {
+  font-size: 1.125rem;
+  max-width: 600px;
+  color: #4a4a4a;
+}
+
+.hero-section .hero-cta {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.75rem;
+  background: var(--primary-color);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-section .hero-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(13, 110, 253, 0.25);
+}
+
+
 
 .feature-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
