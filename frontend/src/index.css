@@ -17,11 +17,11 @@ body {
 }
 
 .hero-section {
-  background: linear-gradient(135deg, var(--primary-color) 0%, #4c84ff 100%);
+  background: linear-gradient(135deg, var(--primary-color) 0%, #ffffff 100%);
   min-height: 60vh;
   display: flex;
   align-items: center;
-  color: white;
+  color: #4c84ff;
 }
 
 .feature-card {

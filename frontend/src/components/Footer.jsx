@@ -4,7 +4,7 @@ export default function Footer() {
       <p className="flex flex-col items-center gap-1">
         Developed with <span className="text-red-500">❤️</span> by{" "}
         <a
-          href="https://www.linkedin.com/in/rathan-kumar492"
+          href="https://www.linkedin.com/in/joseph-nyaguthii"
           target="_blank"
           className="text-blue-600 hover:underline"
         >
