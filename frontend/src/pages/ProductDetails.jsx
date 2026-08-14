@@ -178,7 +178,7 @@ const ProductDetail = () => {
 
               <div className="mb-3">
                 <span className="h2 text-primary fw-bold">
-                  ${product?.price}
+                  Ksh{product?.price}
                 </span>
                 <span className="ms-3 text-muted">
                   {product?.stock > 0 ? (

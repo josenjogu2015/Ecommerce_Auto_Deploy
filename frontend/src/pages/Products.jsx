@@ -104,7 +104,7 @@ const Products = () => {
 
                   <div className="d-flex justify-content-between align-items-center mb-3">
                     <span className="h5 text-primary fw-bold">
-                      ${product?.price}
+                      Ksh{product?.price}
                     </span>
                     <small
                       className={`fw-semibold ${
