@@ -14,15 +14,15 @@ export default function Footer() {
 
       <div className="flex flex-col items-center gap-1 mt-2">
         <a
-          href="mailto:developer.rathan@gmail.com"
+          href="mailto:jnjogunyaguthii@gmail.com"
           className="text-blue-600 hover:underline"
         >
-          developer.rathan@gmail.com{" "}
+         jnjogunyaguthii@gmail.com{" "}
         </a>
 
         <span className="flex items-center gap-1 text-gray-500 text-sm">
           <i className="bi bi-geo-alt-fill" style={{ fontSize: "20px" }}></i>
-          Mumbai, India
+          Nairobi, Kenya
         </span>
       </div>
     </footer>
