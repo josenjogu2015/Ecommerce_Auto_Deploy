@@ -72,7 +72,7 @@ const Products = () => {
           {products?.length > 0 ? (
             products?.map((product) => (
               <div
-                key={product?.id}
+                key={product?.slug}
                 className="product-card bg-white shadow-sm mb-4"
                 // Added inline style for consistent width if not handled in CSS
                 style={{ width: "18rem" }}
@@ -118,7 +118,7 @@ const Products = () => {
                   </div>
 
                   <Link
-                    to={`/product/${product?.id}`}
+                    to={`/product/${product?.slug}`}
                     className={`btn btn-primary rounded-pill w-100 ${
                       product?.stock === 0 ? "disabled" : ""
                     }`}

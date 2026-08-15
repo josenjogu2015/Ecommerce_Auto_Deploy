@@ -10,7 +10,7 @@ const ProductDetail = () => {
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const { id } = useParams();
+  const { slug } = useParams()
   const navigate = useNavigate();
   const { api: axiosapi } = useAxios();
   const { state, dispatch } = useCart();
@@ -18,14 +18,14 @@ const ProductDetail = () => {
   const { auth } = useAuth();
   const accessToken = auth?.accessToken;
 
-  const cartItem = state.items.find((item) => item.product === product?.id);
+  const cartItem = state.items.find((item) => item.product === product?.slug);
   const isInCart = !!cartItem;
 
   useEffect(() => {
     const fetchProduct = async () => {
       try {
         setLoading(true);
-        const response = await api.get(`/products/${id}/`);
+        const response = await api.get(`/products/${slug}/`);
         setProduct(response.data);
         setError(null);
       } catch (err) {
@@ -40,10 +40,10 @@ const ProductDetail = () => {
       }
     };
 
-    if (id) {
-      fetchProduct();
-    }
-  }, [id, api]);
+    if (slug) {
+  fetchProduct();
+}
+}, [slug, api]);
 
   const fetchCartData = async () => {
     dispatch({ type: "START_LOADING" });

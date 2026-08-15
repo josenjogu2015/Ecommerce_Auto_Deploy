@@ -343,7 +343,7 @@ const Checkout = () => {
                         </div>
                       </div>
                       <small className="fw-semibold">
-                        ${item?.price * item?.quantity}
+                        Ksh{item?.price * item?.quantity}
                       </small>
                     </div>
                   ))}
@@ -351,7 +351,7 @@ const Checkout = () => {
                 <hr />
                 <div className="d-flex justify-content-between mb-2">
                   <span>Subtotal:</span>
-                  <span>${cartState?.subtotal}</span>
+                  <span>Ksh{cartState?.subtotal}</span>
                 </div>
                 <div className="d-flex justify-content-between mb-2">
                   <span>Shipping:</span>
@@ -359,13 +359,13 @@ const Checkout = () => {
                 </div>
                 <div className="d-flex justify-content-between mb-3">
                   <span>Tax:</span>
-                  <span>${cartState?.total - cartState?.subtotal}</span>
+                  <span>Ksh{cartState?.total - cartState?.subtotal}</span>
                 </div>
                 <hr />
                 <div className="d-flex justify-content-between mb-3">
                   <strong>Total:</strong>
                   <strong className="text-primary h5">
-                    ${cartState?.total}
+                    Ksh{cartState?.total}
                   </strong>
                 </div>
                 <div className="text-center text-muted">

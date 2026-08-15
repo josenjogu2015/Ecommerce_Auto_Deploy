@@ -19,7 +19,7 @@ urlpatterns = [
     path('products/', ProductViews.ProductListView.as_view()),
 
     # product detail
-    path('products/<int:pk>/', ProductViews.ProductDetailView.as_view()),
+    path('products/<slug:slug>/', ProductViews.ProductDetailView.as_view()),
 
     # Cart API
     path('cart/', CartViews.CartView.as_view()),
