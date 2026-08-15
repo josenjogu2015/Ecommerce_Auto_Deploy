@@ -173,5 +173,7 @@ EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
-    'http://172.237.114.49:5173'
+    'http://172.237.114.49:5173',
+    'http://store.josephnyaguthii.co.ke/',
+    'https://store.josephnyaguthii.co.ke/',
 ]
