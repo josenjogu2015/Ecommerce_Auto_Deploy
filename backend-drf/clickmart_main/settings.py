@@ -176,4 +176,10 @@ CORS_ALLOWED_ORIGINS = [
     'http://172.237.114.49:5173',
     'http://store.josephnyaguthii.co.ke',
     'https://store.josephnyaguthii.co.ke',
+    'https://store.josephnyaguthii.co.ke'
+]
+CSRF_TRUSTED_ORIGINS = [
+    'https://store.josephnyaguthii.co.ke',
+    'http://172.237.114.49:5173',
+    'http://localhost:5173',
 ]
